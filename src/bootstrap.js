@@ -14,7 +14,8 @@ import Results from "./components/results"
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
-import "./style/main.scss";
+import 'bootstrap/dist/css/bootstrap.css';
+import './style/main.scss';
 
 function main() {
   ReactDOM.render(
